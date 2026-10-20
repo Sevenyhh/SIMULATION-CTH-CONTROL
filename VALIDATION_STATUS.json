@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-20T23:51:36.046215+08:00",
+  "distribution": "Single summer-sunny illustrative case; source-protected MATLAB functions",
+  "matlab_version": "9.12.0.2170939 (R2022a) Update 6",
+  "pcode_minimum_release": "R2022a",
+  "source_comparison": {
+    "energy_fixture_count": 3,
+    "energy_results_identical": true,
+    "tieo_seeded_toy_test_identical": true
+  },
+  "dynamic_tests": {
+    "baseline": {
+      "stop_time_s": 60,
+      "control_rows": 61,
+      "upper_rows": 25,
+      "energy_rows": 2
+    },
+    "optimized": {
+      "stop_time_s": 60,
+      "control_rows": 61,
+      "upper_rows": 1,
+      "energy_rows": 2
+    }
+  },
+  "figure_export_tested": false,
+  "figure_test_limitation": "Only one upper-history record in the 60-second test; original interp1 plotting requires two or more records. Full-duration plotting is not verified.",
+  "full_24h_executed": false,
+  "pcode_function_count": 66,
+  "readable_m_file_count": 5,
+  "source_inputs_unchanged": true,
+  "original_package_missing_dictionary": true,
+  "repairs": [
+    "Restored the required dictionary in this new distribution only",
+    "Replaced source-M-file version checks with checksums of the actual protected files",
+    "Retained the .m template required by explicit filename checks; removed its redundant .p copy"
+  ],
+  "limitations": [
+    "Full 24-hour operation has not been rerun",
+    "P-code obscures MATLAB source but does not protect CSV/MAT inputs or embedded Simulink code",
+    "Existing calibration, load-trend adjustments and controller tuning remain unchanged and visible in configuration"
+  ],
+  "final_template_and_checksum_check_passed": true,
+  "runtime_dictionary": {
+    "file": "runtime_variable_dictionary.xlsx",
+    "variable_count": 28,
+    "sheet_count": 1,
+    "read_only_entry_point": true,
+    "validation_and_24h_input_setup_passed": true,
+    "full_dynamic_rerun_after_dictionary_reduction": false,
+    "checked_at": "2026-10-21 00:04:15"
+  },
+  "current_directory_check": {
+    "case_directory": "Case_SummerSunny",
+    "checked_at": "2026-10-21 00:24:53",
+    "checksum_and_dictionary_passed": true,
+    "input_setup_passed": true,
+    "full_dynamic_rerun": false
+  }
+}
