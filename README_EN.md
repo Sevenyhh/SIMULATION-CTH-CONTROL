@@ -47,14 +47,10 @@ The entry point, `case3_config.m`, `case3_apply_shared_0830_settings.m`, the mix
 
 This is one illustrative summer-sunny case, not the full four-case study, raw measurement archive, or complete source release. The weather/load CSV contains processed simulation inputs. The runtime dictionary contains only current startup-check definitions, not the author development log or raw measurements. Removing private development logs does not remove the obligation to disclose performance-affecting calibration, numerical adjustments, controller settings, and input processing in the manuscript and supporting methods.
 
-The intended use is execution and inspection of the supplied single-case example under the stated MATLAB/toolbox requirements. The protected format must be disclosed to the editor and reviewers. Acceptance of P-code depends on the journal's code and data policy; this package must not be described as open-source or fully independently reproducible. If inspectable source, underlying measurements, or all reported cases are required, additional material or an access arrangement accepted by the journal is necessary. No private-source access arrangement is established by this README.
+The intended use is execution and inspection of the supplied single-case example under the stated MATLAB/toolbox requirements. The protected format must be disclosed to the editor and reviewers.
 
 ### Verification Scope
 
 Before the directory rename, the baseline and optimized strategies each completed a 60-second dynamic test. Fixed-input energy evaluations at three boundaries and a seeded TIEO toy test matched the readable implementation exactly. The reduced runtime dictionary subsequently passed variable checks and 24-hour input-profile loading. These checks do not constitute a full 24-hour dynamic rerun.
 
 The short optimized test produced only one upper-history record, while the original plotting routine requires at least two for interpolation. Full-duration figure generation remains unverified. Consult `VALIDATION_STATUS.json` for test scope and limitations; do not infer full-duration or field validation from the short tests.
-
-### Comment Removal
-
-The five distributed readable `.m` files contain no percent-sign comments in the current package. This statement does not apply to the SLX contents: its nine embedded MATLAB scripts retain 37 standalone comment lines, and the model contains 20 annotation nodes. Embedded comments may include code-generation directives and model explanations; they have not been indiscriminately removed. P-files do not expose readable MATLAB source comments, but P-code is not a strong-encryption guarantee.
