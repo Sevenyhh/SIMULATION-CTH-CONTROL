@@ -25,7 +25,7 @@
   "figure_export_tested": false,
   "figure_test_limitation": "Only one upper-history record in the 60-second test; original interp1 plotting requires two or more records. Full-duration plotting is not verified.",
   "full_24h_executed": false,
-  "pcode_function_count": 66,
+  "pcode_function_count": 67,
   "readable_m_file_count": 5,
   "source_inputs_unchanged": true,
   "original_package_missing_dictionary": true,
@@ -55,5 +55,29 @@
     "checksum_and_dictionary_passed": true,
     "input_setup_passed": true,
     "full_dynamic_rerun": false
+  },
+  "parameter_terminology_revision": {
+    "checked_at": "2026-11-03 22:30:18",
+    "effective_legacy_configuration_identical": true,
+    "energy_fixture_count": 3,
+    "energy_fixture_outputs_identical": true,
+    "shared_configuration_is_pcode": true,
+    "core_algorithms_unchanged": true,
+    "full_24h_executed": false,
+    "baseline": {
+      "stop_time_s": 2,
+      "control_rows": 3,
+      "upper_rows": 25,
+      "energy_rows": 2,
+      "simulation_completed": true
+    },
+    "optimized": {
+      "stop_time_s": 2,
+      "control_rows": 3,
+      "upper_rows": 0,
+      "energy_rows": 0,
+      "simulation_completed": true
+    },
+    "completed_at": "2026-11-03T22:36:25.965419+08:00"
   }
 }
